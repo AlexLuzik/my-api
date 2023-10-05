@@ -25,4 +25,5 @@ Once Node-RED is installed, you can install `node-red-contrib-ftp-client` using 
 ```shell
 npm install node-red-contrib-ftp-client
 ```
+
 After installation, restart your Node-RED instance, and the FTP nodes will be available in the Node-RED palette for use.
