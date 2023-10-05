@@ -57,16 +57,16 @@ Inputs
 Outputs
 
 1. Standard output (LIST):
-    msg.payload (array):
-        Array of the file/folders in the user's default FTP folder
+    - msg.payload (array):
+        - Array of the file/folders in the user's default FTP folder
 
 2. Standard output (GET, PUT, APPEND, DELETE and MKDIR):
-    msg.payload (string):
-        Message that processing is complete.
+    - msg.payload (string):
+        - Message that processing is complete.
 
 3. Standard error:
-    msg.payload (string): Error message.
-        You can configure these operations using input messages and set options such as the filename, local filename, and more.
+    - msg.payload (string): Error message.
+        - You can configure these operations using input messages and set options such as the filename, local filename, and more.
 
 ## Example
 
