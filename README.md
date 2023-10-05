@@ -27,3 +27,18 @@ npm install node-red-contrib-ftp-client
 ```
 
 After installation, restart your Node-RED instance, and the FTP nodes will be available in the Node-RED palette for use.
+
+## Usage
+
+`node-red-contrib-ftp-client includes the following modules:
+### FTP Node
+The FTP node provides the following operations:
+
+* LIST: List files and folders on a remote FTP server.
+* GET: Download a file from the remote server.
+* PUT: Upload a file to the remote server.
+* APPEND: Append data to an existing file on the remote server.
+* DELETE: Delete a file on the remote server.
+* MKDIR: Create a directory on the remote server.
+
+You can configure these operations using input messages and set options such as the filename, local filename, and more.
