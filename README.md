@@ -41,18 +41,30 @@ The FTP node provides the following operations:
 
 Inputs
 
-* msg.operation (string): Type of the operation. Allows 'LIST', 'GET', 'PUT', 'APPEND', 'DELETE' and 'MKDIR'. Default: 'LIST'
-* msg.host (string): The hostname or IP address of the FTP server. Default: 'localhost'
-* msg.port integer: The port of the FTP server. Default: 21
-* msg.secure (mixed): Set to true for both control and data connection encryption, 'control' for control connection encryption only, or 'implicit' for implicitly encrypted control connection (this mode is deprecated in modern times, but usually uses port 990) Default: false
-* msg.secureOptions (object): Additional options to be passed to tls.connect(). Default: (none)
-* msg.user (string): Username for authentication. Default: 'anonymous'
-* msg.password (string): Password for authentication. Default: 'anonymous@'
-* msg.connTimeout (integer): How long (in milliseconds) to wait for the control connection to be established. Default: 10000
-* sg.pasvTimeout (integer): How long (in milliseconds) to wait for a PASV data connection to be established. Default: 10000
-* msg.keepalive (integer): How often (in milliseconds) to send a 'dummy' (NOOP) command to keep the connection alive. Default: 10000
-* msg.filename (string): Path/name of the file on the remote FTP server.
-* msg.localFilename (string) | (buffer): Path/name of the file on the local machine. Default the same as filename
+* msg.operation (string):
+    - Type of the operation. Allows 'LIST', 'GET', 'PUT', 'APPEND', 'DELETE' and 'MKDIR'. Default: 'LIST'
+* msg.host (string):
+    - The hostname or IP address of the FTP server. Default: 'localhost'
+* msg.port integer:
+    - The port of the FTP server. Default: 21
+* msg.secure (mixed):
+    - Set to true for both control and data connection encryption, 'control' for control connection encryption only, or 'implicit' for implicitly encrypted control connection (this mode is deprecated in modern times, but usually uses port 990) Default: false
+* msg.secureOptions (object):
+    - Additional options to be passed to tls.connect(). Default: (none)
+* msg.user (string):
+    - Username for authentication. Default: 'anonymous'
+* msg.password (string):
+    - Password for authentication. Default: 'anonymous@'
+* msg.connTimeout (integer):
+    - How long (in milliseconds) to wait for the control connection to be established. Default: 10000
+* sg.pasvTimeout (integer):
+    - How long (in milliseconds) to wait for a PASV data connection to be established. Default: 10000
+* msg.keepalive (integer):
+    - How often (in milliseconds) to send a 'dummy' (NOOP) command to keep the connection alive. Default: 10000
+* msg.filename (string):
+    - Path/name of the file on the remote FTP server.
+* msg.localFilename (string) | (buffer):
+    - Path/name of the file on the local machine. Default the same as filename
 
 Outputs
 
